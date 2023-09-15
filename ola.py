@@ -55,10 +55,22 @@ def q08():
     print(numero1-numero2)
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
+def q09():
+    n = float(input('Digite um numero: '))
+    q = n * (1/4)
+    print('A quarta parte de {:.2f} é {:.2f}'.format(n, q))
 
+    
 #10. Faça um programa que leia três números reais e calcule a
 #    média aritmética destes números. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def q10():
+    n1 = float(input('Digite um numero1:'))
+    n2 = float (input('Digite um numero2:'))
+    n3 = float (input('Digite um numero3:'))
+    media1 = (n1+n2+n3)/3 
+    print (media1) 
+
 
 #11. Faça um programa que leia dois números reais e calcule as
 #    quatro operações básicas entre estes dois números, adição,
@@ -67,7 +79,13 @@ def q08():
 
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
-#    imprimir o resultado do cálculo.
+#    imprimir o resultado do cálculo.       
+def q12():
+    num = input("Digite um número:\n")
+    raiz = float(num) ** 0.5
+    print(f'\nA raiz quadrada de {num} é {raiz}\n')
+
+
 
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
@@ -114,4 +132,4 @@ def q08():
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
 
-q08()
+q12()
