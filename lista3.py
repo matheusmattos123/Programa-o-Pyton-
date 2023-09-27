@@ -3,22 +3,33 @@ Lista de Exercícios referentes a estruturas de iteração (repetição)
 '''
 
 #1.Faça um programa que imprima todos os números de 1 até 100.
-def questao01():
-    pass
-
+def q01():
+    print(" Imprimir todos os números de 1 até 100.") 
+    for i in range(1,101):
+        print(i) 
 #2. Faça um programa que imprima todos os números pares de 100 até 1.
-def questao02():
-    pass
+def q02():
+    for i in range(100):
+        if(i%2==0):
+            print(i, "Números pares!")
 
 #3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
-def questao03():
+def q03():
     pass
+
 
 #4. Faça umprograma que permita entrar com o nome, a idade e o sexo de 20
 #pessoas.O programa deve imprimir o nome da pessoa se ela for do sexo masculino
 #e tiver mais de 21 anos.
-def questao04():
-    pass
+def q04():
+    for i in range (20):
+        nome = input('nome: ') 
+        idade = int(input('idade: '))
+        sexo =  input('sexo: ')
+        if sexo == 'm' and idade > 21:
+            print(f'{nome.upper()}')
+        
+        
 
 #5. Sabendo-se que a unidade lógica e aritmética calcula o produto através de somas
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
@@ -110,8 +121,16 @@ def questao14():
 #imprima:
 #• total de pessoas com menos de 21 anos
 #• total de pessoas com mais de 50 anos
-def questao15():
-    pass
+def q15():
+    qtde21 = 0
+    qtde50 = 0
+    for i in range (20): 
+        idade = int(input('idade: '))
+        if idade < 21:
+            qtde21+=1
+        if idade > 50:
+            qtde50+=1
+    print (idade)
 
 #16. Sabendo-se que a unidade lógica e aritmética calcula a divisão por meio de subtrações
 #sucessivas, criar um algoritmo que calcule e imprima o resto da divisão de
@@ -289,3 +308,4 @@ def questao16():
 #analisadas.
 #Obs.: Para encerrar a entrada de dados, digite um número menor que zero para a
 #idade.
+q15()
